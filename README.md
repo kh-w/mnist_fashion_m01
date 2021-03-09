@@ -1,2 +1,26 @@
-# mnist_fashion_m01
-Use deep learning algorithms on the fashion version of mnist dataset.
+# Objective
+Compared the accuracy of predictions from simple neural network and ensemble (equal weight of: LDA, Naive Bayes, SVM, Kernelized kNN, Random Forest) on the fashion version of mnist dataset.
+
+# Dataset
+fashion_mnist is a fashion version of mnist (the famous toy dataset for image recognition) and it is obtainable at [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist). It is a dataset of 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images with each image having the same dimension (28 * 28 pixels) and all images are categorized into 10 categories, similar to mnist (digit 0-9). The 10 categories are:
+
+Below are 4 sample images from the dataset:
+
+<img src="/plot_1.png" align="left" height="400" width="400">
+
+| levels  | category |
+| ------------- | ------------- |
+|0|T-shirt/top|
+|1|Trouser|
+|2|Pullover|
+|3|Dress|
+|4|Coat|
+|5|Sandal|
+|6|Shirt|
+|7|Sneaker|
+|8|Bag|
+|9|Ankle boot|
+
+According to Zalando Research, they seek to replace mnist dataset by the fashion_mnist dataset for those who want to benchmark their image recognition algorithms.
+
+# Compare fashion_mnist to mnist
