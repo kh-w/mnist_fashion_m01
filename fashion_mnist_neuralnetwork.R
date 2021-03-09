@@ -1,7 +1,5 @@
 library(keras)
 
-mnist <- dataset_mnist()
-
 train_dat <- read.csv(file = 'datasets/fashion_mnist/fashion-mnist_train.csv')
 test_dat <- read.csv(file = 'datasets/fashion_mnist/fashion-mnist_test.csv')
 
