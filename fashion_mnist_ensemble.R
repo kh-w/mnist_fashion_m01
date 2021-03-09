@@ -36,7 +36,7 @@ labelnames <- c("0 T-shirt/top",
                 "6 Shirt",
                 "7 Sneaker",
                 "8 Bag",
-                "9 Ankle boot")
+                "9 Ankle boot") 
 
 # setwd("C:/Users/woodr/Google Drive/EdX - Data Science Capstone Project/My own project")
 getwd()
