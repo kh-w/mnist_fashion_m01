@@ -8,6 +8,11 @@ train_labels <- array(as.integer(as.matrix(train_dat[,1],nrow=60000,ncol=1)))
 test_images <- array(as.numeric(as.matrix(test_dat[,2:785],nrow=10000,ncol=784)), dim=c(10000,28,28))
 test_labels <- array(as.integer(as.matrix(test_dat[,1],nrow=10000,ncol=1)))
 
+rm(train_dat, test_dat)
+
+train_labels <- to_categorical(train_labels)
+test_labels <- to_categorical(test_labels)
+
 train_images <- array_reshape(train_images, c(60000, 28 * 28))
 train_images <- train_images / 255
 test_images <- array_reshape(test_images, c(10000, 28 * 28))
@@ -23,8 +28,7 @@ network %>%
           loss = "categorical_crossentropy",
           metrics = c("accuracy"))
 
-train_labels <- to_categorical(train_labels)
-test_labels <- to_categorical(test_labels)
+
 
 network %>% 
   fit(train_images, train_labels, epochs = 5, batch_size = 128)
