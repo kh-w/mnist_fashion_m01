@@ -21,11 +21,11 @@ test_images <- test_images / 255
 ## CNN_1: CNN without regularization
 
 model_cnn1 <- keras_model_sequential() %>%
-  layer_conv_2d(filters = 32, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 32, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_flatten() %>%
   layer_dense(units = 64, activation = "relu") %>%
   layer_dense(units = 10, activation = "softmax")
@@ -43,11 +43,11 @@ model_cnn1 %>% save_model_hdf5("fashion_mnist_CNN_1.h5")
 ## CNN_2: CNN_1 with 0.5 dropout rate after flattening
 
 model_cnn2 <- keras_model_sequential() %>%
-  layer_conv_2d(filters = 32, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 32, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_flatten() %>%
   layer_dropout(rate = 0.5) %>%
   layer_dense(units = 64, activation = "relu") %>%
@@ -66,11 +66,11 @@ model_cnn2 %>% save_model_hdf5("fashion_mnist_CNN_2.h5")
 ## CNN_3: CNN_2 with L2 regularization
 
 model_cnn3 <- keras_model_sequential() %>%
-  layer_conv_2d(filters = 32, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 32, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_max_pooling_2d(pool_size = c(2,2)) %>%
-  layer_conv_2d(filters = 64, kernel_size = c(3,3), activation = "relu", input_shape = c(28,28,1)) %>%
+  layer_conv_2d(filters = 64, kernel_size = c(3,3), padding = "same", activation = "relu", input_shape = c(28,28,1)) %>%
   layer_flatten() %>%
   layer_dropout(rate = 0.5) %>%
   layer_dense(units = 64, kernel_regularizer = regularizer_l2(0.001), activation = "relu") %>%
