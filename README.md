@@ -1,6 +1,5 @@
 # Objective
-Compared the accuracy of predictions from ensemble (equal weight of: LDA, Naive Bayes, SVM, Kernelized kNN, Random Forest), simple neural network and 
-convolutional neural network on the fashion version of mnist dataset.
+Understand CNN (Convolution Neural Network) and compare the accuracy of predictions from ensemble (equal weight of: LDA, Naive Bayes, SVM, Kernelized kNN, Random Forest), simple neural network and convolutional neural network on the fashion version of mnist dataset. Seek the best tuned convolution neural network.
 
 # Dataset
 fashion_mnist is a fashion version of mnist (the famous toy dataset for image recognition) and it is obtainable at [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist). It is a dataset of 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images with each image having the same dimension (28 * 28 pixels) and all images are categorized into 10 categories, similar to mnist (digit 0-9). The 10 categories are listed below. 
