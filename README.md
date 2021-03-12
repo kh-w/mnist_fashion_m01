@@ -1,5 +1,7 @@
 # Objective
-Understand CNN (Convolution Neural Network) and compare the performance of an ensemble (equal weight of: LDA, Naive Bayes, SVM, Kernelized kNN, Random Forest), simple neural networks and convolutional neural networks on the fashion version of mnist dataset. Seek the best tuned convolution neural network.
+- Understand CNN (Convolution Neural Network)
+- Compare the performances of simple neural networks and convolutional neural networks on the fashion version of mnist dataset 
+- Seek the best tuned convolution neural network.
 
 # Dataset
 fashion_mnist is a fashion version of mnist (the famous toy dataset for image recognition) and it is obtainable at [Kaggle](https://www.kaggle.com/zalando-research/fashionmnist). It is a dataset of 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images with each image having the same dimension (28 * 28 pixels) and all images are categorized into 10 categories, similar to mnist (digit 0-9). The 10 categories are listed below. 
@@ -21,7 +23,7 @@ Below are 4 sample images from the dataset:
 |8|Bag|
 |9|Ankle boot|
 
-According to Zalando Research, they seek to replace mnist dataset by the fashion_mnist dataset for those who want to benchmark their image recognition algorithms.
+According to Zalando Research, they seek to replace mnist dataset by the fashion_mnist dataset for those who want to benchmark their image recognition algorithms. Since most CNNs work almost equally well on traditional mnist dataset, this replacement is beneficial to those who want to test out their CNN.
 
 # Compare fashion_mnist to mnist
-To compare the predictability of mnist and fashion_mnist, a simple neural network is useful. 
+To compare the predictability of mnist and fashion_mnist, a simple neural network is useful. Using the following neural network:
