@@ -8,7 +8,7 @@ fashion_mnist is a fashion version of mnist (the famous toy dataset for image re
 
 Below are 4 sample images from the dataset:
 
-<img src="/plot_1.png" align="left" height="400" width="400">
+<img src="/plot_1.png" align="left" height="410" width="410">
 
 | levels  | category |
 | ------------- | ------------- |
