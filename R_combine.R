@@ -105,7 +105,7 @@ history_cnn1 <- model_cnn1 %>% fit(fashion_mnist_train_images,
                                    validation_data = list(fashion_mnist_test_images, 
                                                           fashion_mnist_test_labels), 
                                    epochs = 15, batch_size = 64)
-plot(history_cnn1)
+plot(history_cnn1) + ggtitle("CNN_1")
 model_cnn1 %>% save_model_hdf5("fashion_mnist_CNN_1.h5")
 
 ## CNN_2: CNN_1 with 0.5 dropout rate after flattening
@@ -130,7 +130,7 @@ history_cnn2 <- model_cnn2 %>% fit(fashion_mnist_train_images,
                                    validation_data = list(fashion_mnist_test_images, 
                                                           fashion_mnist_test_labels), 
                                    epochs = 15, batch_size = 64)
-plot(history_cnn2)
+plot(history_cnn2) + ggtitle("CNN_2")
 model_cnn2 %>% save_model_hdf5("fashion_mnist_CNN_2.h5")
 
 ## CNN_3: CNN_2 with L2 regularization
@@ -155,5 +155,5 @@ history_cnn3 <- model_cnn3 %>% fit(fashion_mnist_train_images,
                                    validation_data = list(fashion_mnist_test_images, 
                                                           fashion_mnist_test_labels), 
                                    epochs = 50, batch_size = 64)
-plot(history_cnn3)
+plot(history_cnn3) + ggtitle("CNN_3")
 model_cnn3 %>% save_model_hdf5("fashion_mnist_CNN_3.h5")
