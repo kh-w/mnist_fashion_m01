@@ -11,6 +11,11 @@ image(matrix(as.numeric(fashion_mnist_train_dat[143,2:785]),28,28), main = as.nu
 image(matrix(as.numeric(fashion_mnist_train_dat[437,2:785]),28,28), main = as.numeric(fashion_mnist_train_dat[437,1]))
 image(matrix(as.numeric(fashion_mnist_train_dat[5413,2:785]),28,28), main = as.numeric(fashion_mnist_train_dat[5413,1]))
 
+par(mfrow = c(1,3))
+image(matrix(as.numeric(fashion_mnist_train_dat[75,2:785]),28,28), main = as.numeric(fashion_mnist_train_dat[75,1]))
+image(matrix(as.numeric(fashion_mnist_train_dat[78,2:785]),28,28), main = as.numeric(fashion_mnist_train_dat[78,1]))
+image(matrix(as.numeric(fashion_mnist_train_dat[86,2:785]),28,28), main = as.numeric(fashion_mnist_train_dat[86,1]))
+
 fashion_mnist_train_images <- array(as.numeric(as.matrix(fashion_mnist_train_dat[,2:785],nrow=60000,ncol=784)), dim=c(60000,28,28))
 fashion_mnist_train_labels <- array(as.integer(as.matrix(fashion_mnist_train_dat[,1],nrow=60000,ncol=1)))
 fashion_mnist_test_images <- array(as.numeric(as.matrix(fashion_mnist_test_dat[,2:785],nrow=10000,ncol=784)), dim=c(10000,28,28))
@@ -46,10 +51,10 @@ history_fmnist_NN <- fashion_mnist_model_NN %>% fit(fashion_mnist_train_images,
                                                     fashion_mnist_train_labels,
                                                     validation_data = list(fashion_mnist_test_images, 
                                                                            fashion_mnist_test_labels),
-                                                    epochs = 25, batch_size = 128)
+                                                    epochs = 50, batch_size = 128)
 
 # plot the performance vs epoch
-plot(history_fmnist_NN)
+plot(history_fmnist_NN) + ggtitle("fashion_mnist")
 
 # load the mnist dataset
 mnist <- dataset_mnist()
@@ -75,7 +80,7 @@ history_mnist_NN <- fashion_mnist_model_NN %>% fit(mnist_train_images,
                                                     mnist_train_labels,
                                                     validation_data = list(mnist_test_images, 
                                                                            mnist_test_labels),
-                                                    epochs = 25, batch_size = 128)
+                                                    epochs = 50, batch_size = 128)
 
 # plot the performance vs epoch
-plot(history_mnist_NN)
+plot(history_mnist_NN) + ggtitle("mnist")
