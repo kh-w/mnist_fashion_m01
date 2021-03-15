@@ -38,7 +38,6 @@ Using the following regularized artificial neural network:
     <td><img src="/mnist_NN.png"></td>
   </tr>
 </table>
-<br>
 
 The accuracy is around 89% on the fashion_mnist dataset but the accuracy is around 98% on the mnist dataset. The performances differ because of the amount of noise, the variety within a single category and the similarity between two or more categories. The below comparison shows how subtle the differences could be.
 
