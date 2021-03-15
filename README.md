@@ -43,5 +43,7 @@ Using the following regularized neural network:
   </tr>
 </table>
 
-The performances differ because of the amount of noise, the variety within a single category and the similarity between two or more categories. The below comparison shows how subtle the differences could be:
 <img src="/similar_images.png">
+
+The performances differ because of the amount of noise, the variety within a single category and the similarity between two or more categories. The above comparison shows how subtle the differences could be.
+
