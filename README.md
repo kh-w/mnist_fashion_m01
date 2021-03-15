@@ -26,5 +26,17 @@ Below are 4 sample images from the dataset:
 According to Zalando Research, they seek to replace mnist dataset by the fashion_mnist dataset for those who want to benchmark their image recognition algorithms. Since most CNNs work almost equally well on traditional mnist dataset, this replacement is beneficial to those who want to test out their CNNs such that it is easier to distinguish good or bad models.
 
 # Compare fashion_mnist to mnist
-To compare the predictability of mnist and fashion_mnist, a simple neural network is useful. Using the following regularized neural network:
-<img src="/fashion_mnist_model_NN.png" align="left">
+To compare the predictability of mnist and fashion_mnist, a simple neural network is useful. 
+Using the following regularized neural network:
+
+<table>
+  <tr>
+    <td colspan = "2"><img src="/fashion_mnist_model_NN.png"></td>
+  <tr>
+  <tr>
+    <td><img src="/fashion_mnist_NN.png"></td>
+    <td><img src="/mnist_NN.png"></td>
+  </tr>
+</table>
+
+
