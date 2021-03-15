@@ -31,11 +31,11 @@ Using the following regularized neural network:
 
 <table>
   <tr>
-    <td colspan = "2"><img src="/fashion_mnist_model_NN.png" align="center"></td>
+    <td colspan = "2"><img src="/fashion_mnist_model_NN.png"></td>
   <tr>
   <tr>
-    <td><img src="/fashion_mnist_NN.png" align="center"></td>
-    <td><img src="/mnist_NN.png" align="center"></td>
+    <td><img src="/fashion_mnist_NN.png"></td>
+    <td><img src="/mnist_NN.png"></td>
   </tr>
 </table>
 
