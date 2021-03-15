@@ -31,7 +31,7 @@ Using the following regularized neural network:
 
 <table>
   <tr>
-    <td><img src="/fashion_mnist_model_NN.png" align="left"></td>
+    <td colspan = "2"><img src="/fashion_mnist_model_NN.png" align="left"></td>
   <tr>
   <tr>
     <td><img src="/fashion_mnist_NN.png"></td>
