@@ -45,6 +45,6 @@ The accuracy is around 89% on the fashion_mnist dataset but the accuracy is arou
 Since artificial neural network "observes" the input as a whole picture, subtle differences are more difficult to detect. In this case, a convolution neural network is more appropriate because the key difference between neural network and convolution neural network (CNN) is that CNN decompose a picture into translational invariable local patterns.
 
 # Convolution Neural Network
-This section describes the baseline CNN for this project, and the next section will be the fine tuning base on this model.
+This section describes the baseline Convolution Neural Network for this project, and the next section will be the fine tuning base on this model.
 
 
