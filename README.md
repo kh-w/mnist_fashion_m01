@@ -37,6 +37,11 @@ Using the following regularized neural network:
     <td><img src="/fashion_mnist_NN.png"></td>
     <td><img src="/mnist_NN.png"></td>
   </tr>
+  <tr>
+    <td>The accuracy is around 89% on fashion_mnist validation dataset.</td>
+    <td>The accuracy is around 98% on fashion_mnist validation dataset.</td>
+  </tr>
 </table>
 
-
+The performances differ because of the amount of noise, the variety within a single category and the similarity between two or more categories. The below comparison shows how subtle the differences could be:
+<img src="/similar_images.png">
