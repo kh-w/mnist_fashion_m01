@@ -25,7 +25,7 @@ Below are 4 sample images from the dataset:
 According to Zalando Research, they seek to replace mnist dataset by the fashion_mnist dataset for those who want to benchmark their image recognition algorithms, for instance, CNN. Since most CNNs work almost equally well on traditional mnist dataset, this replacement is beneficial to those who want to test out their CNNs such that it is easier to distinguish good or bad models.
 
 ### Compare fashion_mnist to mnist
-To compare the predictability of mnist and fashion_mnist, a simple artificial neural network is useful. 
+To compare the predictability of mnist and fashion_mnist, a simple artificial neural network is useful. Keras library (<a href="https://cran.r-project.org/web/packages/keras/index.html">link</a>) is needed throughout the whole project.
 Using the following regularized artificial neural network:
 
 <table>
@@ -47,4 +47,7 @@ Since artificial neural network "observes" the input as a whole picture, subtle 
 # Convolution Neural Network
 This section describes the baseline Convolution Neural Network for this project, and the next section will be the fine tuning base on this model.
 
+The input of the CNN model would be a _tensor_ with shape [1:10000, 1:28, 1:28, 1] which is a collection of 10000 28 x 28 images with only 1 color (grayscale). The first layer of the model is a Conv2D. The process is to slide a _filter_ (a stack of _kernel_(s)) through the image and output a _channel_. 
+
+_tensor_: In Keras, tensor is the standard input/output format of a layer in a nerual network
 
