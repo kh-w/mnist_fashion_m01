@@ -257,7 +257,7 @@ In conclusion, the base model is the following with accuracy `r tail(history_cnn
 load_model_hdf5("mnist_f_CNN_dropout_L2.h5")
 ```
 
-# Model Tuning
+# Model Tuning and Results
 
 There are rooms to improve the model by changing the number of layers, the number of filters, the number of nodes in the dense layer. The base model has 3 convolution layers and each of them can have different number of filters. The numbers of filters in the layers are usually non-decreasing. In the base model, the first layer has 32 filters, both second and third layer have 64 filters. The dense layer which will learn from the flattened output of the last convolution layer has at least the same amount of nodes as the input.
 
