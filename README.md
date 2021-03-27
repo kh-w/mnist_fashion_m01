@@ -1,6 +1,12 @@
 # Project report
 The PDF version of the final report is available <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/report.pdf">here</a>.
 
+# Model improvement
+1)
+a. Applied 4 censors seperately to the images
+b. Trained a CNN for each censorship
+c. Ensembled them and got 93% accuracy
+
 # Source of dataset
 The fashion mnist dataset is obtainable at <a href="https://www.kaggle.com/zalando-research/fashionmnist">Zalando Research</a>. It is a dataset with 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images. 
 
