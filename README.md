@@ -1,5 +1,11 @@
-# Project report
-The PDF version of the final report is available <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/report.pdf">here</a>.
+# Project
+
+- Designed and explained a Convolution Neural Network (CNN) in R keras
+- The final report is available <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/report.pdf">here</a>
+
+Further model improvements:
+- Applied censors to images as part of the data pre-processing
+- Ensemble models to boost model accuracy
 
 # Model improvement
 <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/fashion_mnist_ensemble_benchmark.R">Ensemble</a>
