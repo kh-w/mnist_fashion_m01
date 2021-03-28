@@ -10,7 +10,7 @@
 <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/fashion_mnist_ensemble_benchmark.R">Ensemble</a>
 1) Applied 4 censors seperately to the images
 2) Trained a CNN for each censorship
-3) Ensembled them and got 93% accuracy
+3) Ensembled them and got 93% accuracy (~2% improvement on the base model)
 
 # Source of dataset
 The fashion mnist dataset is obtainable at <a href="https://www.kaggle.com/zalando-research/fashionmnist">Zalando Research</a>. It is a dataset with 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images. 
