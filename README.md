@@ -1,6 +1,7 @@
 # Project
 
 - Designed and explained a Convolution Neural Network (CNN) in R keras
+- Used graphics to visualize the CNN concept
 - The final report is available <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/report.pdf">here</a>
 
 (Further model improvements)
