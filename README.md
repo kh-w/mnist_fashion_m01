@@ -10,7 +10,7 @@
 # Model improvement
 <a href="https://github.com/kh-w/mnist_fashion_m01/blob/main/fashion_mnist_ensemble_benchmark.R">Ensemble</a>
 1) Applied 4 censors seperately to the images
-2) Trained a CNN for each censorship
+2) Trained a CNN for each censorship 
 3) Ensembled them and got 93% accuracy (~2% improvement on the base model)
 
 # Source of dataset
