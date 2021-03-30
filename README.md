@@ -13,7 +13,7 @@
 2) Trained a CNN for each censorship
 3) Ensembled them and got 93% accuracy (~2% improvement on the base model)
 
-# Source of dataset 
+# Source of dataset
 The fashion mnist dataset is obtainable at <a href="https://www.kaggle.com/zalando-research/fashionmnist">Zalando Research</a>. It is a dataset with 60000 (train) + 10000 (validate) = 70000 (total) Zalando's article images. 
 
 # R version
